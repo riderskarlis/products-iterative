@@ -7,8 +7,12 @@
 <body>
     <header>My App</header>
 
-    <main>{{ $slot }}</main>
+    <div class="layout">
+        <aside>Left</aside>
+        <main>{{ $slot }}</main>
+        <aside>Right</aside>
+    </div>
 
-    <script>{{ asset('js/script.js') }}</script>
+    <footer>Footer</footer>
 </body>
 </html>
